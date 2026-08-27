@@ -52,3 +52,19 @@ class Solution{
         }
 
 }
+
+
+// remove duplicate 
+
+i = 0;
+
+for(j=1; j<arr.size(); j++){
+    if(arr[i]!=arr[j]){
+        i++;
+        arr[i] = arr[j];
+    }
+}
+
+return i+1;
+
+
